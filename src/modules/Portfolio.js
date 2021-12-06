@@ -7,11 +7,9 @@ import Chart from "react-apexcharts";
 import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines';
 
 const PortfolioModule = () => {
-    // date picker
     const [dateRange, setDateRange] = useState([null, null]);
     const [startDate, endDate] = dateRange;
 
-    // chart
     const options = {
         chart: {
             zoom: {
@@ -43,16 +41,11 @@ const PortfolioModule = () => {
         fill: {
             type: 'gradient',
             gradient: {
-                // shadeIntensity: 1,
                 opacityFrom: 0.7,
                 opacityTo: 0.2,
                 stops: [5, 100]
             }
         },
-        // markers: {
-        //     size: 0,
-        //     style: 'hollow',
-        // },
         colors: ['#F5A623', '#31AFD6', '#F84AC1'],
         legend: {
             position: 'top',

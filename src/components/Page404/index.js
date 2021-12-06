@@ -1,7 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
-import { routes } from "../../shared/constants";
 
 const texts = {
     title: "404",
@@ -14,9 +11,6 @@ const Page404Module = () => {
         <div>
             <p>{texts.title}</p>
             <p>{texts.subTitle}</p>
-            <div>
-                <Link to={routes.homepage}>{texts.backToLogin}</Link>
-            </div>
         </div>
     );
 };

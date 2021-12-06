@@ -2,19 +2,6 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from './reducers';
 
-export const initialState = {
-  lastAction: { 
-    type: '', 
-    payload: {}
-  },
-  userAction: {
-    showLoginModal: false,
-    user: null,
-  },
-  // commonAction: {
-  //   isLoading: false
-  // },
-}; 
 
 const logger = store => next => action => {
   console.log('dispatching', action);
@@ -25,7 +12,6 @@ const logger = store => next => action => {
 
 var store = createStore(
   reducers,
-  initialState,
   applyMiddleware(thunk, logger)
 );
 export default store;

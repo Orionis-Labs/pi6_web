@@ -10,7 +10,6 @@ import { Sparklines, SparklinesLine, SparklinesSpots } from 'react-sparklines';
 const HeadingModule = (props) => {
 
     return (
-        <>
             <div className="zl_all_page_heading_section">
                 <div className="zl_all_page_heading">
                     <h2>{props.name}</h2>
@@ -123,10 +122,8 @@ const HeadingModule = (props) => {
                             </div>
                         </Dropdown.Menu>
                     </Dropdown>
-                    <Link to={'/login'} className="zl_all_page_logout_btn">Log Out</Link>
                 </div>
             </div>
-        </>
     );
 }
 

@@ -215,7 +215,6 @@ const AllTransactionListComponent = (props) => {
     },[props]);
 
     return (
-        <>
             <div className="overflow-auto">
                 <Table className="zl_transaction_list_table">
                     <thead>
@@ -244,8 +243,7 @@ const AllTransactionListComponent = (props) => {
                     </tbody>
                 </Table>
             </div>
-        </>
     );
 }
 
-export default connect(null, null)(AllTransactionListComponent);
+export default AllTransactionListComponent

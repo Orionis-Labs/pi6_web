@@ -125,7 +125,6 @@ function Step3(props) {
                 <img src="assets/image/light-welcome-slider3.png" alt="wizard-img" className="img-fluid zl_light_theme_slide_img" />
             </div>
             <Link to={'/dashboard'} className="zl_welcome_slide_step_btns">Get Started</Link>
-            <Link to={'/login'} className="zl_welcome_slide_already_wallet">I already have wallet</Link>
         </React.Fragment>
     );
 }

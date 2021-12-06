@@ -1,12 +1,42 @@
 import React,{useState} from 'react'
-import { Modal, Button, InputGroup , FormControl } from 'react-bootstrap';
-function AddWalletPopUp({addwalletTowallet}) {
+import { Modal, Button, FormControl } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import Axios from 'axios';
+import { addwalletTowallets } from '../../store/reducers/wallet.actions';
+function AddWalletPopUp({ addwalletTowallets, item }) {
+  const newitem = {
+    id: `${item.id}`,
+    image: `${item.image}`,
+    heading: `${item.heading}` ,
+    peregraph: `${item.peregraph}`,
+    address: 0,
+    amount: "",
+    api: `${item.api}`,
+    coin_id: `${item.coin_id}`,
+    price: "",
+    denom: `${item.denom}`,
+  };
     const [show, setShow] = useState(false);
     const handleClose = () => {
-        setShow(false);
-    };
+      setShow(false);
+  };
+  const handleSubmit = () => {
+    setShow(false);
+    Axios.get(
+      `https://api.coingecko.com/api/v3/simple/price?ids=${item.coin_id}&vs_currencies=usd`
+    ).then((Response) => {
+      newitem.price = Response.data[item.coin_id].usd;
+    });
+    Axios.get(`${item.api}/bank/balances/${newitem.address}`).then(
+      (Response) => {
+        newitem.amount = Response.data.result;
+      }
+    );
+    addwalletTowallets(newitem);
+
+    
+  };
     const handleShow = () => setShow(true);
-    const [address, setAddress] = useState('')
     return (
       <div>
         <Button variant="outline-secondary" onClick={handleShow}>
@@ -18,28 +48,30 @@ function AddWalletPopUp({addwalletTowallet}) {
             <Modal.Title>Add Wallet</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <input
-              onChange={(e) => setAddress(e.target.value)}
-              placeholder="Type a message..."
+            <FormControl
+              onChange={(e) => (newitem.address = e.target.value)}
+              placeholder="Type your wallet address..."
             />
           </Modal.Body>
           <Modal.Footer>
-            <Button
-              variant="secondary"
-              onClick={addwalletTowallet}
-            >
+            <Button variant="outline-secondary" onClick={handleClose}>
               Close
             </Button>
-            <div onClick = {handleClose} >
-            <Button variant="primary" onClick={addwalletTowallet}>
-            ADD WALLET
-            </Button>
-            </div>
+              <Button variant = "outline-success" onClick={handleSubmit}>
+                ADD WALLET
+              </Button>
           </Modal.Footer>
         </Modal>
       </div>
     );
 }
+const mapDispatchToProps = (dispatch) => ({
+  addwalletTowallets: (item) => dispatch(addwalletTowallets(item)),
+});
+
+// const mapDispatchToProps = (dispatch) => ({
+//   address: (address) => dispatch(addWalletsAddress(address)),
+// });
 
 
-export default AddWalletPopUp
+export default connect(null ,mapDispatchToProps) (AddWalletPopUp)

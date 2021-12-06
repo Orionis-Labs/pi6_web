@@ -15,7 +15,7 @@ const PortfolioModule = ({ WalletItems }) => {
           <h3 className="zl_bottom_content_heading">crypto currencies</h3>
           <Nav className="zl_add_currency_row row">
             {WalletItems.map((item) => (
-                <AddWallet item={item} />
+              <AddWallet item={item} />
             ))}
             <div className="zl_add_currency_column zl_add_currency_btn_col col">
               <Link to={"/addcurrency"} className="zl_add_currency_btn_content">
@@ -26,7 +26,7 @@ const PortfolioModule = ({ WalletItems }) => {
         </div>
         <Tab.Content>
           {WalletItems.map((item) => (
-            <Tab.Pane eventKey={`tab${item.id}`} key={item.id}>
+            <Tab.Pane eventKey={`tab${item.id}`} key={Math.random()}>
               <WalletDetails {...item} />
             </Tab.Pane>
           ))}

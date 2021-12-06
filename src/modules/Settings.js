@@ -44,17 +44,6 @@ const SettingModule = ({themHandler}) => {
                             </svg>
                         </div>
                     </Link>
-                    <Link to={'/restorewallet'} className="zl_setting_list_items">
-                        <div className="zl_setting_items_heading_peregraph">
-                            <h3>Restore Wallet</h3>
-                            <p>Overwrite your current mobile wallet using a 12-word recovery pharse.</p>
-                        </div>
-                        <div className="zl_setting_items_right_text">
-                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 1L6.08833 6L1 11" stroke="#828CAE" strokeWidth="2.4" />
-                            </svg>
-                        </div>
-                    </Link>
                     <div className="zl_setting_list_items">
                         <div className="zl_setting_items_heading_peregraph">
                             <h3>Change Theme Mode</h3>

@@ -15,10 +15,6 @@ const CONFIG_OPTIONS = {
     env: 'DB_API_ROOT',
     default: 'http://localhost:3000/'
   },
-  FAILED_LOGIN_ATTEMPTS_TO_BLOCK: {
-    env: 'FAILED_LOGIN_ATTEMPTS_TO_BLOCK',
-    default: '10'
-  },
   APP_ENVIRONMENT: {
     env: 'APP_ENVIRONMENT',
     default: 'local'
