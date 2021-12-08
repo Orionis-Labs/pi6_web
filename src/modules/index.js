@@ -10,16 +10,18 @@ import Airdrops from './Airdrops';
 import Setting from './Settings';
 import Currency from './Currency';
 import AccountSupport from './AccountSupport';
+import Proposals from './Proposals';
 
 export default {
-	// [routes.homepage]: Homepage,
-	[routes.dashboardpage]: Dashboard,
-	[routes.welcomepage]: Welcome,
-	[routes.portfoliopage]: Portfolio,
-	[routes.addcurrencypage]: AddCurrency,
-	[routes.walletspage]: Wallets,
-	[routes.Airdropspage]: Airdrops,
-	[routes.settingspage]: Setting,
-	[routes.currencypage]: Currency,
-	[routes.accountsupportpage]: AccountSupport
+  // [routes.homepage]: Homepage,
+  [routes.dashboardpage]: Dashboard,
+  [routes.welcomepage]: Welcome,
+  [routes.portfoliopage]: Portfolio,
+  [routes.addcurrencypage]: AddCurrency,
+  [routes.walletspage]: Wallets,
+  [routes.Airdropspage]: Airdrops,
+  [routes.settingspage]: Setting,
+  [routes.proposalpage]: Proposals,
+  [routes.currencypage]: Currency,
+  [routes.accountsupportpage]: AccountSupport,
 };

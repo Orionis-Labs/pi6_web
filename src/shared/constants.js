@@ -11,4 +11,5 @@ export const routes = {
   currencypage: "/currency",
   accountsupportpage: "/accountsupport",
   account: "/dashboard/account",
+  proposalpage:'/proposals'
 };

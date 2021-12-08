@@ -59,7 +59,7 @@
 .zl_page_sidebar[title='portfolio'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='portfolio'] .zl_page_sidebar_link::before,
 .zl_page_sidebar[title='wallets'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='wallets'] .zl_page_sidebar_link::before,
 .zl_page_sidebar[title='Airdrops'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='Airdrops'] .zl_page_sidebar_link::before,
-.zl_page_sidebar[title='securebackup'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='securebackup'] .zl_page_sidebar_link::before,
+.zl_page_sidebar[title='proposals'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='proposals'] .zl_page_sidebar_link::before,
 .zl_page_sidebar[title='settings'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='settings'] .zl_page_sidebar_link::before,
 .zl_page_sidebar[title='accountsupport'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='accountsupport'] .zl_page_sidebar_link::before{
     content: "";
@@ -78,7 +78,7 @@
 .zl_page_sidebar[title='portfolio'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='portfolio'] .zl_page_sidebar_link::after,
 .zl_page_sidebar[title='wallets'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='wallets'] .zl_page_sidebar_link::after,
 .zl_page_sidebar[title='Airdrops'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='Airdrops'] .zl_page_sidebar_link::after,
-.zl_page_sidebar[title='securebackup'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='securebackup'] .zl_page_sidebar_link::after,
+.zl_page_sidebar[title='proposals'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='proposals'] .zl_page_sidebar_link::after,
 .zl_page_sidebar[title='settings'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='settings'] .zl_page_sidebar_link::after,
 .zl_page_sidebar[title='accountsupport'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='accountsupport'] .zl_page_sidebar_link::after{
     content: "";
@@ -96,7 +96,7 @@
 .zl_page_sidebar[title='portfolio'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='portfolio'] .zl_page_sidebar_link,
 .zl_page_sidebar[title='wallets'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='wallets'] .zl_page_sidebar_link,
 .zl_page_sidebar[title='Airdrops'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='Airdrops'] .zl_page_sidebar_link,
-.zl_page_sidebar[title='securebackup'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='securebackup'] .zl_page_sidebar_link,
+.zl_page_sidebar[title='proposals'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='proposals'] .zl_page_sidebar_link,
 .zl_page_sidebar[title='settings'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='settings'] .zl_page_sidebar_link,
 .zl_page_sidebar[title='accountsupport'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='accountsupport'] .zl_page_sidebar_link{
     color: #53B9EA;
@@ -104,13 +104,13 @@
 
 .zl_page_sidebar[title='dashboard'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='dashboard'] .zl_page_sidebar_link svg rect,
 .zl_page_sidebar[title='accountsupport'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='accountsupport'] .zl_page_sidebar_link svg path,
-.zl_page_sidebar[title='securebackup'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='securebackup'] .zl_page_sidebar_link svg path,
+.zl_page_sidebar[title='proposals'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='proposals'] .zl_page_sidebar_link svg path,
 .zl_page_sidebar[title='Airdrops'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='Airdrops'] .zl_page_sidebar_link svg path,
 .zl_page_sidebar[title='wallets'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='wallets'] .zl_page_sidebar_link svg path{
     fill: #53B9EA;
 }
 
-.zl_page_sidebar[title='securebackup'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='securebackup'] .zl_page_sidebar_link svg path+path{
+.zl_page_sidebar[title='proposals'] .zl_page_sidebar_content .zl_page_sidebar_nav .zl_page_sidebar_items[title='proposals'] .zl_page_sidebar_link svg path+path{
     fill: #252F47;
 }
 

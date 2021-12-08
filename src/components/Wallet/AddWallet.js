@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { Nav } from "react-bootstrap";
 
 function AddWallet({ item }) {
-    const price = parseInt(item.price)
+  const price = item.price;
     const amount = item.amount.filter((ite) => (item.denom === `${ite.denom}`)).map((itee) => itee.amount)
   const balance = (amount) / Math.pow(10, 6) * price;
   const userBalance = balance.toFixed(2);
@@ -49,19 +49,7 @@ function AddWallet({ item }) {
               </div>
               <div className="zl_add_currency_right_price">
                 <span>
-                  <svg
-                    width="6"
-                    height="6"
-                    viewBox="0 0 6 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M3.60609 3.60609L2.69695 4.51523C2.36222 4.84996 1.81951 4.84996 1.48477 4.51523C1.15004 4.18049 1.15004 3.63778 1.48477 3.30305L2.39391 2.39391L0 0H6V6L3.60609 3.60609Z"
-                      fill="#50E2C2"
-                    />
-                  </svg>
-                  +12,5%
+                  {amount}
                 </span>
                 <p>${userBalance}</p>
               </div>
