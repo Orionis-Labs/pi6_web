@@ -42,7 +42,6 @@ const DashboardModule = ({ WalletItems }) => {
       ],
     },
   };
-  console.log(WalletItems.length)
     return (
       <section className="zl_dashboard_page">
         <HeadingModule name={"Dashboard"} />
