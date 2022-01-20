@@ -14,6 +14,6 @@ Built With :-
 Dart, Firebase, Flutter, Javascript, React
 
 ![pi6-1](https://user-images.githubusercontent.com/60839175/150105964-cff0d534-0f09-4690-aa55-b80850a87989.jpg)
-![pi6-2](https://user-images.githubusercontent.com/60839175/150105976-3e16303b-327c-44af-a8cd-2bd4b7cd7fa2.jpg)
 ![pi6-3](https://user-images.githubusercontent.com/60839175/150105990-208da13c-a102-437a-877a-62fdd29670ff.jpg)
 ![pi6-4](https://user-images.githubusercontent.com/60839175/150106003-35efa724-0dff-4780-9a5e-ae67c9d9b767.jpg)
+![pi6-2](https://user-images.githubusercontent.com/60839175/150105976-3e16303b-327c-44af-a8cd-2bd4b7cd7fa2.jpg)
